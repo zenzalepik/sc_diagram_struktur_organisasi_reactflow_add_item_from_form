@@ -1,0 +1,54 @@
+.c_react_flow{
+  position: absolute!important;
+  top: 0 !important;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.react-flow {
+  --xy-node-background-color-default: #ffcc00; /* Warna latar belakang node */
+  --xy-node-border-default: 2px solid #ff6600; /* Border node */
+  --xy-node-boxshadow-hover-default: 0 4px 8px rgba(255, 102, 0, 0.4); /* Efek hover dengan bayangan */
+  --xy-node-boxshadow-selected-default: 0 0 10px 2px rgba(255, 102, 0, 0.6); /* Efek bayangan untuk node yang dipilih */
+  --xy-edge-stroke-default: #00b3b3; /* Warna garis untuk edges */
+  --xy-edge-stroke-width-default: 2; /* Lebar garis edges */
+  --xy-edge-stroke-selected-default: #ff6600; /* Warna garis untuk edge yang dipilih */
+  --xy-connectionline-stroke-default: #00b3b3; /* Warna garis sambungan */
+  --xy-connectionline-stroke-width-default: 2; /* Lebar garis sambungan */
+  --xy-selection-background-color-default: rgba(0, 179, 179, 0.15); /* Warna latar belakang seleksi */
+  --xy-selection-border-default: 2px dashed #ff6600; /* Border seleksi */
+  --xy-controls-button-background-color-default: #f0f0f0; /* Warna latar belakang tombol kontrol */
+  --xy-controls-button-background-color-hover-default: #e6e6e6; /* Warna latar belakang tombol kontrol saat hover */
+  --xy-controls-button-color-default: #333; /* Warna teks tombol kontrol */
+  --xy-controls-button-color-hover-default: #333; /* Warna teks tombol kontrol saat hover */
+  --xy-controls-button-border-color-default: #ccc; /* Border tombol kontrol */
+  --xy-controls-box-shadow-default: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan kontrol */
+  --xy-handle-background-color-default: #ff6600; /* Warna handle */
+  --xy-handle-border-color-default: #fff; /* Border handle */
+  --xy-minimap-background-color-default: #f0f0f0; /* Warna latar belakang minimap */
+  --xy-background-pattern-dot-color-default: #ffcc00; /* Warna titik di latar belakang */
+  --xy-background-pattern-line-color-default: #e6e6e6; /* Warna garis latar belakang */
+  --xy-background-pattern-cross-color-default: #ff6600; /* Warna silang latar belakang */
+  --xy-node-group-background-color-default: rgba(255, 102, 0, 0.15); /* Latar belakang grup node */
+}
+
+ /* Gaya untuk node */
+ .react-flow__node {
+  background-color: var(--xy-node-background-color-default);
+  border: var(--xy-node-border-default);
+  box-shadow: var(--xy-node-boxshadow-hover-default);
+}
+
+/* Gaya untuk node yang dipilih */
+.react-flow__node.selected {
+  color: white;
+  background-color: #0000ff;  /* Latar belakang biru saat node dipilih */
+  border: 2px solid #00b3b3;  /* Garis tepi tosca saat node dipilih */
+  box-shadow: var(--xy-node-boxshadow-selected-default);  /* Bayangan untuk node yang dipilih */
+}
+
+/* Efek hover pada node */
+.react-flow__node:hover {
+  box-shadow: var(--xy-node-boxshadow-hover-default);  /* Bayangan saat hover */
+}

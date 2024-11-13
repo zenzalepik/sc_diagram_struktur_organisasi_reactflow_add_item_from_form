@@ -1,0 +1,2 @@
+https://reactflow.dev/examples/nodes/add-node-on-edge-drop
+https://reactflow.dev/examples/layout/auto-layout
